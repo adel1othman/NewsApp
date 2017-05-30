@@ -114,8 +114,9 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         query = wordsCounter(s.toString());
-                                        stopRepeatingTask();
-                                        startRepeatingTask();
+                                        requestManager(query);
+                                        /*stopRepeatingTask();
+                                        startRepeatingTask();*/
                                     }
                                 });
                             }
